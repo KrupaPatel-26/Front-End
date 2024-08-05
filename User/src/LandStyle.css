@@ -1,0 +1,332 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-style: "Montserrat";
+}
+
+.flex {
+    display:flex;
+    align-items: center;
+}
+/* nav-bar */
+.navbar {
+    top:0px;
+    background-color: rgb(211, 210, 208);
+    height: 90px;
+    width :100%;
+    position :fixed;
+    justify-content:space-between;
+    padding-inline:100px;
+    font-style: "Montserrat";
+    z-index: 100;
+    
+
+}
+
+.logo {
+    height:100%;
+    
+}
+.linkr {
+    text-decoration:none;
+    color:transparent;
+}
+ ul {
+    padding-left:45px;
+    list-style: none;
+    gap:30px;
+    font-size: larger;
+    color: rgb(48, 46, 46);
+    font-weight: 600;
+}
+li {
+  color: rgb(48, 46, 46);
+  font-style:normal;
+}
+li:hover {
+  cursor: pointer;
+  color :#6d5500;
+}
+
+.Options {
+    gap:35px;
+}
+
+.buttons {
+    height :100%;
+    gap :15px;
+}
+
+.button-style {
+    height :42px;
+    width: 100px;
+    font-style: "Montserrat";
+    color:rgb(48, 46, 46);
+    border-radius: 4px;
+    font-size: 17px;
+    font-weight: 550;
+    padding-inline:2px;
+}
+.button-style:hover {
+  cursor: pointer;
+}
+
+.con {
+    border: 2px solid #D4AF37;
+    background-color:transparent;
+}
+.sign {
+    background-color: transparent;
+    /* background-image:linear-gradient(to right,#ae8625,#f7ef8a); */
+    border:none;
+}
+.icon {
+  color:#ae8625;
+  height: 80%;
+}
+
+/* Hero-section */
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust height as needed */
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place image behind content */
+  }
+  
+  
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Or use your preferred text color */
+    z-index: 1; /* Place content above image */
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+  }
+
+  /* Mission and history */
+  .mission-and-history {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-top: 25px;
+    overflow: hidden;
+    background-color: #f3e7c1;
+  }
+  
+  
+  .content-container {
+    flex: 1;
+    padding-left: 50px;
+    padding-right: 100px;
+  }
+  
+  .content-container h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #a33a10;
+  }
+  
+  .content-container p {
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-size:large;
+  }
+
+  
+  .stats img{
+    width:100%;
+    
+    height:350px
+    
+  }
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    justify-content:space-evenly ;
+    width:110%;
+   
+  }
+  
+  
+  
+  .stat {
+    width: 250px;
+    margin: 20px;
+    border: 1px solid #8f8a8a;
+    padding: 20px;
+    text-align: center;
+    flex-wrap: wrap; 
+    justify-content:space-evenly ;
+    background-color:#ccc;
+  }
+  
+  .stat h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #6d5500;
+  }
+
+
+/* Services-cards */
+
+  .event-planning-services {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #e0dfdf;
+  }
+  
+  .event-planning-services h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .event-planning-services p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.8;
+    font-size: large;
+  }
+  
+  .service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-inline: 50px;
+    
+    
+  }
+  
+  .service-card {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #111010;
+    border-radius: 1px;
+    transition:all 0.3s ease;
+    
+  }
+  .service-card:hover {
+    cursor: pointer;
+    transform:translateY(-8px);
+  }
+  
+  .service-card img {
+    width: 100%;
+    height: 60%;
+    margin-bottom: 20px;
+  }
+  
+  .service-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .service-card p {
+    margin-bottom: 20px;
+  }
+  
+  .service-card button {
+    width:150px;
+    cursor: pointer;
+  }
+
+  /* Packages.... */
+  .event-packages {
+  text-align: center;
+  padding: 20px;
+  width:100%;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #f3e7c1;
+  }
+  .header {
+  text-align: center;
+  margin-bottom: 70px;
+  }
+ .header h1 {
+  font-size: 40px;
+ }
+ .header p {
+  padding-top:16px;
+  font-size: 18px;
+ }
+  .package-container {
+    display: flex;
+    justify-content: space-around;
+    margin-inline: 20px;
+    color:rgb(19, 0, 0);
+  }
+  
+  .package-card {
+    background-color:rgba(211, 122, 39, 0.897);
+    background-image: url("C:\Users\Dell\Desktop\Mariyaa\onestop_v1\User\public\packimg.jpg");
+    border-radius: 1px;
+    padding-inline: 40px;
+    padding-top:40px;
+    width: 30%;
+    height:480px;
+    box-shadow:5px 5px 2px #13131242;
+    transition:all 0.3s ease;
+  }
+  .package-card:hover {
+    cursor: pointer;
+    transform:translateY(-8px);
+  }
+.package-card h2{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.card-desc {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+  .price {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .select-btn {
+    background-color:rgba(245, 216, 174, 0.726);
+   border: none;
+    font-size: 20px;
+    padding: 9px 20px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    color:rgb(7, 0, 0);
+    cursor: pointer;
+  }
+
+  .select-btn:active {
+    background-color: rgb(177, 134, 25);
+    top:1px;
+  }
