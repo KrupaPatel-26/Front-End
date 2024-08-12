@@ -4,6 +4,10 @@ import HeroSection from './components/HeroSection'
 import MissionAndHistory from './components/MissionAndHistory'
 import ServiceCards from './components/ServiceCards'
 import Packages from './components/Packages'
+import Corporate from './Corporate'
+import Cultural from './Cultural'
+import Festival from './Festival'
+import Milestone from './Milestone'
 
 function LandingPage() {
   return (
@@ -13,6 +17,10 @@ function LandingPage() {
       <MissionAndHistory />
       <ServiceCards />
       <Packages />
+      <Corporate />
+      <Cultural/>
+      <Festival />
+      <Milestone/>
     </div>
   )
 }

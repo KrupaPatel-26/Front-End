@@ -1,0 +1,146 @@
+.cult {
+    font-family: Arial, sans-serif;
+    background-image: url("C:\Users\Dell\Desktop\Mariyaa\onestop_v1\User\public\culture copy.jpg");
+    text-align: center;
+    color: #01070e;
+    background-color: #dee2e6;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  header {
+    
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  section {
+    margin: 40px 0;
+  }
+  
+  .cult-events-section {
+    max-width: 1600px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  .cult-event-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+  }
+  
+  
+  .cult-event-card h2 {
+    color: #ee3c05;
+  }
+  
+  .cult-event-card p {
+    color: #630404;
+  }
+  
+  /* Events Section Styling */
+  .cultural-events-section {
+    display: flex;
+    gap: 10px;
+   background-color: #eec40704;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:170px
+    
+  }
+  
+  
+  .cultural-events-content {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    color: #ec6408;
+  }
+  
+  
+  
+  .cult-events-description {
+    flex: 2;
+    
+  }
+  
+  .cult-events-description h2 {
+    margin-top: 0;
+  }
+  
+
+ 
+  .cult-event-card {
+    background-color: #f1de2dab;
+    align-items: flex-start;
+    border:none;
+    border-right: 2px solid rgb(77, 42, 3);
+    border-radius: 1px;
+    padding: 15px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 0px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    width:102%
+  
+  }
+  
+  .cult-event-card h3 {
+    color: #6e2706;
+    margin-bottom: 10px;
+    margin-top: 3px;
+  }
+  
+  .cult-event-card p {
+    color: #6d0a06;
+    margin: 0;
+  }
+  
+  /* Package Cards Styling */
+  .cult-package-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-left: 3px;
+  }
+  .cult-Package h1{
+    color:#140b01;
+    font-size: 30px;
+  }
+
+  .cult-card {
+    
+    
+    background-color: #ebcd68b6;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px);
+    margin-bottom: 20px;
+    
+  }
+  
+  .cult-card h3 {
+    color: #1a0801;
+    margin-bottom: 10px;
+  }
+  
+  .cult-card p {
+    color: #1b0d01;
+    margin: 0;
+
+  }
+  
+  .cult-card strong {
+    color: #220703;
+  }
+  
+  .cult-card button {
+    padding:10px;
+    border-radius: 7px;
+  }
+
+
+

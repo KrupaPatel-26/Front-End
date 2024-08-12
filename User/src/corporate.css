@@ -1,0 +1,169 @@
+.Corporate {
+    font-family: Arial, sans-serif;
+    
+    text-align: center;
+    color: #01070e;
+    background-image: url("C:\Users\Dell\Desktop\Mariyaa\onestop_v1\User\public\cor2.jpg");
+  
+    
+    background-size: cover;
+  }
+  
+  header {
+    
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  section {
+    margin: 40px 0;
+  }
+  
+
+  .events-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  .event-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .event-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .event-card h2 {
+    color: #f7f1f1;
+  }
+  
+  .event-card p {
+    color: #faf2f2;
+  }
+  
+  /* Events Section Styling */
+  .events-section {
+    display: flex;
+    gap: 10px;
+   background-color: #233b5a;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  
+  .events-content {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    color: #e8ecf0;
+  }
+  
+  .events-image {
+    flex: 1;
+    max-width: 40%; /* Adjust width of the image container */
+  }
+  
+  .events-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .events-description {
+    flex: 2;
+    
+  }
+  
+  .events-description h2 {
+    margin-top: 0;
+  }
+  
+  .events-cards {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    background-color: #26282b;
+    background-repeat: no-repeat;
+    
+  }
+ 
+  .event-card {
+    background-color: #cccfd300;
+    align-items: flex-start;
+    border:none;
+    border-right: 2px solid white;
+    border-radius: 1px;
+    padding: 20px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 0px;
+    margin-top: 30px;
+    width:105%
+  
+  }
+  
+  .event-card h3 {
+    color: #fafdff;
+    margin-bottom: 10px;
+    margin-top: 3px;
+  }
+  
+  .event-card p {
+    color: #8d9494;
+    margin: 0;
+  }
+  
+  /* Package Cards Styling */
+  .package-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-left: 3px;
+    
+  }
+  .Package h1{
+    color:#01060a;
+    font-size: 30px;
+  }
+
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    background-color: #12335ec2;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px);
+    margin-bottom: 20px;
+    
+
+  }
+  
+  .card h3 {
+    color: #01060a;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    color: #f3f6f8;
+    margin: 0;
+
+  }
+  
+  .card strong {
+    color: #010a16;
+  }
+  
+  .card button {
+    padding:10px;
+    border-radius: 7px;
+  }
+
+
+
