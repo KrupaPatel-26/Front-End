@@ -57,7 +57,7 @@ const Milestone = () => {
         'Full Catering included',
         'Deluxe Decorations',
         'Sound System, Lighting','Stage Setup',
-        'Event planning and management',
+        'Event planning & management',
         'Photography and Videography',
         'Luxury Transportation included',
         'Customized Invitations',
