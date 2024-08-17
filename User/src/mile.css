@@ -144,5 +144,13 @@
     border-radius: 7px;
   }
 
+  .m-image {
+    width: 100%;          /* Ensure the image takes up the full width of the slider container */
+    height: 200px;        /* Set the height for the slider images */
+    object-fit: cover;    /* Ensures the image covers the area while maintaining aspect ratio */
+    border-radius: 8px;   /* Matches the border-radius of the card */
+  }
+  
+  
 
 

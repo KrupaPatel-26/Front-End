@@ -1,9 +1,9 @@
 .cult {
     font-family: Arial, sans-serif;
-    background-image: url("C:\Users\Dell\Desktop\Mariyaa\onestop_v1\User\public\culture copy.jpg");
+    
     text-align: center;
     color: #01070e;
-    background-color: #dee2e6;
+    background-color: #f1f098;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -86,6 +86,7 @@
   
   }
   
+  
   .cult-event-card h3 {
     color: #6e2706;
     margin-bottom: 10px;
@@ -142,5 +143,46 @@
     border-radius: 7px;
   }
 
-
-
+  .slider {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .slider-container {
+    display: flex;
+    transition: transform 0.1s ease-in-out; /* Smooth slide transition */
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0; /* Ensures images don't shrink */
+  }
+  
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 50%;
+  }
+  
+  .slider-button:first-of-type {
+    left: 10px;
+  }
+  
+  .slider-button:last-of-type {
+    right: 10px;
+  }
+  

@@ -1,5 +1,8 @@
 import React from 'react';
+import Slider from 'react-slick';
 import './mile.css';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 const Milestone = () => {
   const packages = [
@@ -7,37 +10,59 @@ const Milestone = () => {
       name: 'Basic Milestone Package',
       description: 'Ideal for intimate milestone celebrations, includes venue, basic decorations, and catering.',
       price: 'Rs.3 Lakhs',
-      content: '50 Guests included',
-      content1: 'Catering included',
-      content2: 'Basic Decorations',
-      content3: 'Sound System included',
-      content4: 'Event coordination support',
+      images: [
+        'milestonebasicfood2.jpg',
+        'milestonebasicfood.jpg',
+        'milestonepremium.jpg'
+      ],
+      features: [
+        'Max. 50 Guests',
+        'Catering included',
+        'Basic Decorations',
+        'cake included'
+        
+      ],
     },
     {
       name: 'Standard Milestone Package',
       description: 'Perfect for medium-sized milestone events, includes venue, enhanced decorations, catering, and entertainment.',
       price: 'Rs.7 Lakhs',
-      content: '150 Guests included',
-      content1: 'Catering included',
-      content2: 'Enhanced Decorations',
-      content3: 'Sound System and Lighting included',
-      content4: 'Event coordination support',
-      content5: 'Photography and Videography included',
-      content6: 'Live Entertainment included',
+      images: [
+        'standardmilestone.jpg',
+        'milestonestandardfood.jpg',
+        'milestonestandard.jpg'
+      ],
+      features: [
+        'Max. 150 Guests',
+        'Catering included',
+        'Enhanced Decorations',
+        'Sound System and Lighting',
+        'Event coordination support',
+        'Photography and Videography',
+        'Live Entertainment'
+      ],
     },
     {
       name: 'Premium Milestone Package',
       description: 'Best for grand milestone events, includes premium venue, deluxe decorations, full catering, and complete event management.',
       price: 'Rs.15 Lakhs',
-      content: '300 Guests included',
-      content1: 'Full Catering included',
-      content2: 'Deluxe Decorations',
-      content3: 'Sound System, Lighting, and Stage Setup',
-      content4: 'Event planning and management',
-      content5: 'Photography and Videography included',
-      content6: 'Luxury Transportation included',
-      content7: 'Customized Invitations',
-      content8: 'Special Commemorative Gifts',
+      images: [
+        'premiummilestone.jpg',
+        'premiummilestonefood.jpg',
+        'premiummilestonedecor.jpg',
+        
+      ],
+      features: [
+        'Max. 300 Guests',
+        'Full Catering included',
+        'Deluxe Decorations',
+        'Sound System, Lighting','Stage Setup',
+        'Event planning and management',
+        'Photography and Videography',
+        'Luxury Transportation included',
+        'Customized Invitations',
+        'Special Commemorative Gifts'
+      ],
     },
   ];
 
@@ -55,10 +80,18 @@ const Milestone = () => {
       description: 'Mark significant achievements with our packages designed to provide a memorable event with full planning support.',
     },
     {
-      title: 'Company Milestones',
-      description: 'Celebrate your company’s growth and success with our milestone event packages, including decorations, catering, and more.',
+      title: 'Birthday Parties',
+      description: 'Celebrate your birthday with our packages, including decorations, catering, and more.',
     },
   ];
+
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
   return (
     <div className="m">
@@ -84,19 +117,22 @@ const Milestone = () => {
           {packages.map((pkg, index) => (
             <div className="m-card" key={index}>
               <h3>{pkg.name}</h3>
+              <Slider {...sliderSettings}>
+                {pkg.images.map((image, idx) => (
+                  <div key={idx}>
+                    <img src={image} alt={`Package ${index + 1} - Image ${idx + 1}`} className="m-image" />
+                  </div>
+                ))}
+              </Slider>
               <p>{pkg.description}</p><br></br>
               <h1><strong>Price: {pkg.price}</strong></h1><br></br>
-              <p>{pkg.content}</p>
-              <p>{pkg.content1}</p>
-              <p>{pkg.content2}</p>
-              <p>{pkg.content3}</p>
-              <p>{pkg.content4}</p>
-              <p>{pkg.content5}</p>
-              <p>{pkg.content6}</p>
-              <p>{pkg.content7}</p>
-              <p>{pkg.content8}</p>
+              <ul>
+                {pkg.features.map((feature, idx) => (
+                  <li key={idx}>{feature}</li>
+                ))}
+              </ul>
               <br></br>
-              <button>Learn More</button>
+              <button>Learn More & Book</button>
             </div>
           ))}
         </div>

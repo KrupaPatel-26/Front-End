@@ -6,7 +6,7 @@ import ServiceCards from './components/ServiceCards'
 import Packages from './components/Packages'
 import Corporate from './Corporate'
 import Cultural from './Cultural'
-import Festival from './Festival'
+import Wedding from './Wedding'
 import Milestone from './Milestone'
 
 function LandingPage() {
@@ -19,7 +19,7 @@ function LandingPage() {
       <Packages />
       <Corporate />
       <Cultural/>
-      <Festival />
+      <Wedding />
       <Milestone/>
     </div>
   )

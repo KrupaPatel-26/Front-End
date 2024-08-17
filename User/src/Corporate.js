@@ -1,5 +1,8 @@
 import React from 'react';
+import Slider from 'react-slick';
 import './corporate.css';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 const Corporate = () => {
   const packages = [
@@ -7,37 +10,58 @@ const Corporate = () => {
       name: 'Basic Package',
       description: 'Ideal for small teams, includes venue, basic amenities, and refreshments.',
       price: 'Rs.3 Lakhs',
-      content: '50 Peoples included',
-      content1:'Lunch included',
-      content2:'Breakout Sessions',
-      content3:'Audio-Video Facilities included',
-      content4:'Main stage itinerary planning',
+      images: [
+        'basiccorporatedecor.jpg', // Replace with the actual image paths
+        'basiccorporate.jpg',
+       
+      ],
+      features: [
+        'Max. 50 People',
+        'Lunch included',
+        'Breakout Sessions',
+        'Audio-Video Facilities',
+        'Main stage itinerary planning',
+      ],
     },
     {
       name: 'Standard Package',
       description: 'Perfect for medium-sized groups, includes venue, standard amenities, catering, and AV equipment.',
       price: 'Rs.7 Lakhs',
-      content: '250 Peoples included',
-      content1:'Lunch included',
-      content2:'Breakout Sessions',
-      content3:'Audio-Video Facilities included',
-      content4:'Main stage itinerary planning',
-      content5:'Hotel Accomodation facility included',
-      content6:'Pre , Post event orentation included',
+      images: [
+        'standardcorporate.jpg', // Replace with the actual image paths
+        'standardcorporateevent.jpg',
+        
+      ],
+      features: [
+        'Max. 250 People',
+        'Lunch included',
+        'Breakout Sessions',
+        'Audio-Video Facilities included',
+        'Main stage itinerary planning',
+        'Hotel Accommodation facility',
+        'Pre, Post event orientation',
+      ],
     },
     {
       name: 'Premium Package',
       description: 'Best for large teams, includes venue, premium amenities, catering, AV equipment, and event management services.',
       price: 'Rs.13 Lakhs',
-      content: '500 Peoples included',
-      content1:'Lunch included',
-      content2:'Breakout Sessions',
-      content3:'Audio-Video Facilities included',
-      content4:'Main stage itinerary planning',
-      content5:'Hotel Accomodation and Transporation facility included',
-      content6:'Pre , Post event orentation included',
-      content7:'staffing provided',
-      content8:'E-invites with scanners available',
+      images: [
+        'corporatepremium.jpg', // Replace with the actual image paths
+        'premiumcorporate.jpg',
+        
+      ],
+      features: [
+        'Max. 500 People',
+        'Lunch included',
+        'Breakout Sessions',
+        'Audio-Video Facilities',
+        'Main stage itinerary planning',
+        'Hotel Accommodation and Transportation facility',
+        'Pre, Post event orientation',
+        'Staffing provided',
+        'E-invites with scanners available',
+      ],
     },
   ];
 
@@ -60,6 +84,14 @@ const Corporate = () => {
     },
   ];
 
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <div className="Corporate">
       <header>
@@ -68,35 +100,38 @@ const Corporate = () => {
       </header>
 
       <div className="events-section">
-      
-      <div className="event-cards">
-        {events.map((event, index) => (
-          <div key={index} className="event-card">
-            <h2>{event.title}</h2>
-            <p>{event.description}</p>
-          </div>
-        ))}
-    </div>
-</div>
+        <div className="event-cards">
+          {events.map((event, index) => (
+            <div key={index} className="event-card">
+              <h2>{event.title}</h2>
+              <p>{event.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
       <section className="Package">
         <h1><strong>Our Packages</strong></h1><br></br>
         <div className="package-cards">
           {packages.map((pkg, index) => (
             <div className="card" key={index}>
               <h3>{pkg.name}</h3>
+              <Slider {...sliderSettings}>
+                {pkg.images.map((image, idx) => (
+                  <div key={idx}>
+                    <img src={image} alt={`Package ${index + 1} - Image ${idx + 1}`} className="corp-image" />
+                  </div>
+                ))}
+              </Slider>
               <p>{pkg.description}</p><br></br>
               <h1><strong>Price: {pkg.price}</strong></h1><br></br>
-              <p>{pkg.content}</p>
-              <p>{pkg.content1}</p>
-              <p>{pkg.content2}</p>
-              <p>{pkg.content3}</p>
-              <p>{pkg.content4}</p>
-              <p>{pkg.content5}</p>
-              <p>{pkg.content6}</p>
-              <p>{pkg.content7}</p>
-              <p>{pkg.content8}</p>
+              <ul>
+                {pkg.features.map((feature, idx) => (
+                  <li key={idx}>{feature}</li>
+                ))}
+              </ul>
               <br></br>
-              <button>Learn More</button>
+              <button>Learn More & Book</button>
             </div>
           ))}
         </div>

@@ -1,0 +1,192 @@
+.wedding{
+  font-family: Arial, sans-serif;
+  
+  text-align: center;
+  color: #01070e;
+  background-color: #fad7dc;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  
+  padding: 20px;
+  border-radius: 8px;
+}
+
+section {
+  margin: 40px 0;
+}
+
+.wedding-events-section {
+  max-width: 1600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.wedding-event-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  
+}
+
+
+.wedding-event-card h2 {
+  color: #ee3c05;
+}
+
+.wedding-event-card p {
+  color: #630404;
+}
+
+/* Events Section Styling */
+.weddingural-events-section {
+  display: flex;
+  gap: 10px;
+ background-color: #eec40704;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:170px
+  
+}
+
+
+.weddingural-events-content {
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+  color: #ec6408;
+}
+
+
+
+.wedding-events-description {
+  flex: 2;
+  
+}
+
+.wedding-events-description h2 {
+  margin-top: 0;
+}
+
+
+
+.wedding-event-card {
+  background-color: #fcb3c5ab;
+  align-items: flex-start;
+  border:none;
+  border-right: 2px solid rgb(77, 42, 3);
+  border-radius: 1px;
+  padding: 15px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 0px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  width:102%
+
+}
+
+.wedding-event-card h3 {
+  color: #6e2706;
+  margin-bottom: 10px;
+  margin-top: 3px;
+}
+
+.wedding-event-card p {
+  color: #6d0a06;
+  margin: 0;
+}
+
+/* Package Cards Styling */
+.wedding-package-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-left: 3px;
+}
+.wedding-Package h1{
+  color:#140b01;
+  font-size: 30px;
+}
+
+.wedding-card {
+  
+  
+  background-color: #f79797b6;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: calc(33.333% - 20px);
+  margin-bottom: 20px;
+  
+}
+
+.wedding-card h3 {
+  color: #1a0801;
+  margin-bottom: 10px;
+}
+
+.wedding-card p {
+  color: #1b0d01;
+  margin: 0;
+
+}
+
+.wedding-card strong {
+  color: #220703;
+}
+
+.wedding-card button {
+  padding:10px;
+  border-radius: 7px;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.slider-container {
+  display: flex;
+  transition: transform 0.1s ease-in-out; /* Smooth slide transition */
+}
+
+.slider-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0; /* Ensures images don't shrink */
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+.slider-button:first-of-type {
+  left: 10px;
+}
+
+.slider-button:last-of-type {
+  right: 10px;
+}
+.wedding-image {
+  width: 100%;          /* Ensure the image takes up the full width of the slider container */
+  height: 200px;        /* Set the height for the slider images */
+  object-fit: cover;    /* Ensures the image covers the area while maintaining aspect ratio */
+  border-radius: 8px;   /* Matches the border-radius of the card */
+}
